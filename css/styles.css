@@ -22,6 +22,30 @@ p {
 a {
   text-decoration: none;
 }
+/* common */
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+/* header */
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
 button {
   cursor: pointer;
   font-family: "Roboto", sans-serif;
@@ -36,11 +60,17 @@ button {
   text-transform: uppercase;
   color: #4d5ae5;
 }
+.logo-header-first {
+  padding: 24px 0;
+  margin-right: 76px;
+}
 .logo-header-span {
   color: #2e2f42;
 }
 
 .menu-link {
+  display: block;
+  padding: 24px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -53,8 +83,16 @@ button {
 }
 .contact-info {
   font-style: normal;
+  margin-left: auto;
+}
+.contact-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 .contact-link {
+  display: block;
+  padding: 24px 0;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -65,6 +103,7 @@ button {
 .contact-link:focus {
   color: #404bbf;
 }
+/* hero */
 
 .hero {
   background-color: #2e2f42;
@@ -90,6 +129,7 @@ button {
 .hero-button:focus {
   background-color: #404bbf;
 }
+/* feature */
 .feature-title {
   font-weight: 500;
   font-size: 20px;
@@ -103,6 +143,7 @@ button {
   letter-spacing: 0.02em;
   color: #434455;
 }
+/* team-section */
 .team-section {
   background-color: #f4f4fd;
 }
@@ -131,6 +172,7 @@ button {
   letter-spacing: 0.02em;
   color: #434455;
 }
+/* portfolio */
 .portfolio-title {
   font-size: 36px;
   line-height: 1.11;
@@ -152,6 +194,7 @@ button {
   letter-spacing: 0.02em;
   color: #434455;
 }
+/* footer */
 .page-footer {
   background-color: #2e2f42;
 }
