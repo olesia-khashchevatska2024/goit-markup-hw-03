@@ -4,6 +4,9 @@ body {
   color: #434455;
 }
 /* reset */
+img {
+  display: block;
+}
 ul,
 ol {
   list-style-type: none;
@@ -30,7 +33,6 @@ a {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -120,16 +122,28 @@ button {
 
 .hero {
   background-color: #2e2f42;
+  padding: 188px 0;
 }
 .hero-title {
+  max-width: 496px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  margin: 0 auto;
 }
 .hero-button {
+  margin: 0 auto;
+
+  padding: 16px 32px;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -149,6 +163,7 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .feature-text-descr {
   font-size: 16px;
@@ -160,14 +175,19 @@ button {
   display: flex;
   gap: 24px;
 }
-.feature-container {
-  padding-top: 120px;
-  padding-bottom: 120px;
+.feature-list {
+  width: calc((100% - 72px) / 4);
 }
+.feature {
+  padding: 120px 0;
+}
+
 /* team-section */
 .team-section {
   background-color: #f4f4fd;
+  padding: 120px 0;
 }
+
 .team-title {
   font-size: 36px;
   line-height: 1.11;
@@ -175,25 +195,55 @@ button {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 .team-list {
   background-color: #ffffff;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-card-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-
+  text-align: center;
+  margin-bottom: 8px;
   color: #2e2f42;
+}
+.container-team-descr {
+  padding: 32px 0;
+}
+.team-menu {
+  display: flex;
+  gap: 24px;
 }
 .team-card-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  text-align: center;
 }
 /* portfolio */
+.portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.portfolio-menu {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.portfolio-list {
+  width: calc((100% - 48px) / 3);
+}
+.container-portfolio-text {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
 .portfolio-title {
   font-size: 36px;
   line-height: 1.11;
@@ -201,6 +251,7 @@ button {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 .portfolio-descr {
   font-weight: 500;
@@ -208,6 +259,7 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .portfolio-text {
   font-size: 16px;
@@ -218,6 +270,7 @@ button {
 /* footer */
 .page-footer {
   background-color: #2e2f42;
+  padding: 100px 0;
 }
 .logo-footer {
   font-family: "Raleway", sans-serif;
@@ -227,6 +280,8 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .logo-span-footer {
   color: #f4f4fd;
@@ -235,4 +290,5 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  max-width: 264px;
 }
